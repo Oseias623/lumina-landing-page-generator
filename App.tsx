@@ -11,8 +11,8 @@ import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
-  headline: "Se o seu corpo mudou e você não entende o que está acontecendo…",
-  subheadline: "Um guia simples de alimentação para aliviar os sintomas da menopausa\nSem dietas malucas\nSem pressão\nSem exaustão",
+  headline: "Si la menopausia te dejó cansada, sin dormir bien y emocionalmente agotada, el problema no es tu fuerza de voluntad.",
+  subheadline: "Ondas de calor, insomnio, ansiedad y falta de energía no aparecen “de la nada”.\nAparecen cuando el cuerpo cambia y nadie te explicó cómo cuidarlo en esta etapa.",
   problemStatement: {
     title: "A sensação é de que o chão sumiu e ninguém te explicou o porquê.",
     questions: [
