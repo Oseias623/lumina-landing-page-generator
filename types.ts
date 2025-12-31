@@ -62,6 +62,10 @@ export interface LandingPageContent {
   };
   recipes: {
     title: string;
+    cards: {
+      image: string;
+      text: string;
+    }[];
     items: string[];
   };
   simplePricing: {

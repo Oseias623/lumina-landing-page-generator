@@ -78,6 +78,20 @@ const INITIAL_CONTENT: LandingPageContent = {
   },
   recipes: {
     title: "Recetas pensadas para el día a día",
+    cards: [
+      {
+        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop", // Healthy bowl/simple meal
+        text: "Opciones simples, nutritivas y fáciles."
+      },
+      {
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop", // Fresh salad components
+        text: "Ingredientes accesibles para el día a día."
+      },
+      {
+        image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=800&auto=format&fit=crop", // Simple nutritious breakfast/snack
+        text: "Preparaciones posibles, incluso en días de poco ánimo."
+      }
+    ],
     items: [
       "Comidas que no exigen perfección.",
       "Ingredientes fáciles de encontrar.",

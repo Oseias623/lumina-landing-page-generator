@@ -2,6 +2,10 @@ import React from 'react';
 
 interface RecipesSectionContent {
     title: string;
+    cards: {
+        image: string;
+        text: string;
+    }[];
     items: string[];
 }
 
@@ -22,16 +26,15 @@ const RecipesSection: React.FC<RecipesSectionProps> = ({ content }) => {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
-                    {/* Placeholder for Recipe Images - replacing real images as requested */}
-                    {[1, 2, 3].map((i) => (
-                        <div key={i} className="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/5] bg-slate-100">
+                    {content.cards.map((card, index) => (
+                        <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg aspect-[4/5] bg-slate-100">
                             <img
-                                src={`https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3`} // Generic healthy food image
-                                alt="Receita saudável e simples"
+                                src={card.image}
+                                alt={card.text}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent flex items-end p-6">
-                                <p className="text-white font-medium text-lg">Opções, leves, nutritivas e fáceis.</p>
+                            <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent flex items-end p-6">
+                                <p className="text-white font-medium text-lg leading-snug shadow-sm">{card.text}</p>
                             </div>
                         </div>
                     ))}
