@@ -69,6 +69,14 @@ export interface LandingPageContent {
     }[];
     items: string[];
   };
+  bonuses: {
+    title: string;
+    items: {
+      title: string;
+      description: string;
+    }[];
+    closing: string;
+  };
   simplePricing: {
     title: string;
     subtitle: string;

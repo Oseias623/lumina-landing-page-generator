@@ -12,6 +12,7 @@ import ProductShowcase from './components/ProductShowcase';
 import WhyItWorks from './components/WhyItWorks';
 import GuideContents from './components/GuideContents';
 import RecipesSection from './components/RecipesSection';
+import BonusesSection from './components/BonusesSection';
 import SimplePricing from './components/SimplePricing';
 import AudienceSection from './components/AudienceSection';
 import FAQSection from './components/FAQSection';
@@ -100,10 +101,36 @@ const INITIAL_CONTENT: LandingPageContent = {
       "La idea no es cambiar tu vida de un día para otro. Es hacer más fácil cuidarte cuando el cuerpo pide apoyo."
     ]
   },
+  bonuses: {
+    title: "Bonos incluidos sin costo adicional",
+    items: [
+      {
+        title: "Bono 1 — Plan Antiinflamatorio de 7 Días",
+        description: "Un plan simple para comenzar sin confusión, con comidas organizadas para tu primera semana."
+      },
+      {
+        title: "Bono 2 — Lista de Compras Antiinflamatoria",
+        description: "Para saber exactamente qué comprar y facilitar tu rutina."
+      },
+      {
+        title: "Bono 3 — Recetas Rápidas (15 minutos o menos)",
+        description: "Para los días con poco tiempo o poco ánimo."
+      },
+      {
+        title: "Bono 4 — Cenas para Dormir Mejor",
+        description: "Opciones pensadas para la noche y el descanso."
+      },
+      {
+        title: "Bono 5 — Snacks para la Ansiedad",
+        description: "Ideas simples para momentos de ansiedad, sin recurrir al azúcar."
+      }
+    ],
+    closing: "Todo incluido en un solo acceso, pensado para acompañarte de forma práctica y posible."
+  },
   simplePricing: {
     title: "Acceso a la guía completa",
     subtitle: "Una herramienta práctica para acompañarte en esta etapa,\ncon claridad y sin extremos.",
-    price: "US$ 19",
+    price: "US$ 6,90",
     cta: "¡DESCARGAR AHORA!",
     details: "Pago único · Lectura a tu ritmo · Sin suscripciones",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
