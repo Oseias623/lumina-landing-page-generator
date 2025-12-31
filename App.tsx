@@ -247,6 +247,10 @@ const App: React.FC = () => {
           content={content.recipes}
         />
 
+        <BonusesSection
+          content={content.bonuses}
+        />
+
         <SimplePricing
           content={content.simplePricing}
         />
