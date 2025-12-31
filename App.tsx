@@ -12,8 +12,10 @@ import ProductShowcase from './components/ProductShowcase';
 import WhyItWorks from './components/WhyItWorks';
 import GuideContents from './components/GuideContents';
 import RecipesSection from './components/RecipesSection';
+import RealTestimonials from './components/RealTestimonials';
 import BonusesSection from './components/BonusesSection';
 import SimplePricing from './components/SimplePricing';
+import GuaranteeSection from './components/GuaranteeSection';
 import AudienceSection from './components/AudienceSection';
 import FAQSection from './components/FAQSection';
 import Icon from './components/Icon';
@@ -101,6 +103,25 @@ const INITIAL_CONTENT: LandingPageContent = {
       "La idea no es cambiar tu vida de un día para otro. Es hacer más fácil cuidarte cuando el cuerpo pide apoyo."
     ]
   },
+  realTestimonials: {
+    title: "Lo que dicen mujeres que ya accedieron a la guía",
+    subtitle: "Experiencias reales. Sin exageros. Sin promesas.",
+    items: [
+      {
+        quote: "No me solucionó todo de un día para otro, pero hoy me siento mucho más organizada. Antes comía sin saber si me ayudaba o no. Ahora tengo más claridad y eso ya me dio tranquilidad.",
+        author: "María, 49 años"
+      },
+      {
+        quote: "Lo que más me gustó es que no te exige perfección. Estoy cansada y esta guía entiende eso. Voy paso a paso y me siento menos perdida.",
+        author: "Claudia, 52 años"
+      },
+      {
+        quote: "Pensé que era solo otro ebook, pero me sorprendió. Es simple, directo y posible. Me ayudó a ordenar mi alimentación sin estrés.",
+        author: "Ana, 46 años"
+      }
+    ],
+    closing: "Cada cuerpo es diferente. Pero tener orientación clara hace toda la diferencia."
+  },
   bonuses: {
     title: "Bonos incluidos sin costo adicional",
     items: [
@@ -134,6 +155,15 @@ const INITIAL_CONTENT: LandingPageContent = {
     cta: "¡DESCARGAR AHORA!",
     details: "Pago único · Lectura a tu ritmo · Sin suscripciones",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
+  },
+  guarantee: {
+    title: "Garantía de 7 días, sin riesgos",
+    text: "Sabemos que esta etapa viene cargada de dudas. Por eso, tienes 7 días para acceder a la guía, leer con calma y ver si este enfoque hace sentido para ti.\n\nSi sientes que no es lo que necesitas ahora, puedes solicitar la devolución dentro de ese plazo.",
+    items: [
+      "Sin explicaciones",
+      "Sin preguntas",
+      "Sin presión"
+    ]
   },
   audience: {
     forYou: {
@@ -247,12 +277,20 @@ const App: React.FC = () => {
           content={content.recipes}
         />
 
+        <RealTestimonials
+          content={content.realTestimonials}
+        />
+
         <BonusesSection
           content={content.bonuses}
         />
 
         <SimplePricing
           content={content.simplePricing}
+        />
+
+        <GuaranteeSection
+          content={content.guarantee}
         />
 
         <AudienceSection

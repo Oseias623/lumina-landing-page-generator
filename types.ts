@@ -77,6 +77,20 @@ export interface LandingPageContent {
     }[];
     closing: string;
   };
+  realTestimonials: {
+    title: string;
+    subtitle: string;
+    items: {
+      quote: string;
+      author: string;
+    }[];
+    closing: string;
+  };
+  guarantee: {
+    title: string;
+    text: string;
+    items: string[];
+  };
   simplePricing: {
     title: string;
     subtitle: string;
