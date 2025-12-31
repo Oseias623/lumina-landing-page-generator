@@ -17,11 +17,7 @@ const Hero: React.FC<HeroProps> = ({ headline, subheadline, ctaText, image }) =>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-10 pb-20">
         <div className="max-w-5xl mx-auto text-center space-y-8">
 
-          <div className="inline-block mb-4">
-            <span className="py-1 px-3 border border-gold-metallic/30 rounded-full text-gold-400 text-xs tracking-[0.2em] uppercase font-bold bg-gold-metallic/5">
-              Método Exclusivo
-            </span>
-          </div>
+
 
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-bold tracking-tight leading-tight mb-6">
             <span className="block text-slate-100">{headline}</span>
