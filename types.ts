@@ -83,6 +83,7 @@ export interface LandingPageContent {
     items: {
       quote: string;
       author: string;
+      image?: string;
     }[];
     closing: string;
   };

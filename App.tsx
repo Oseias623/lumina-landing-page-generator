@@ -107,17 +107,54 @@ const INITIAL_CONTENT: LandingPageContent = {
     title: "Lo que dicen mujeres que ya accedieron a la guía",
     subtitle: "Experiencias reales. Sin exageros. Sin promesas.",
     items: [
+      { quote: "No me solucionó todo de un día para otro, pero hoy me siento mucho más organizada. Antes comía sin saber si me ayudaba o no.", author: "María, 49 años" },
+      { quote: "Lo que más me gustó es que no te exige perfección. Estoy cansada y esta guía entiende eso.", author: "Claudia, 52 años" },
+      { quote: "Me dio claridad. Y eso, en esta etapa, ya es muchísimo.", author: "Laura, 47 años" },
+      { quote: "No es milagro, pero es real. Hoy me siento menos perdida con mi alimentación.", author: "Patricia, 50 años" },
+      { quote: "Es simple, posible y sin presión. Justo lo que necesitaba.", author: "Ana, 46 años" },
+      { quote: "Me gustó que no promete cosas imposibles. Es una guía para mujeres reales.", author: "Verónica, 54 años" },
+      { quote: "Ahora sé qué comer y qué evitar. Antes era pura confusión.", author: "Isabel, 48 años" },
+
       {
-        quote: "No me solucionó todo de un día para otro, pero hoy me siento mucho más organizada. Antes comía sin saber si me ayudaba o no. Ahora tengo más claridad y eso ya me dio tranquilidad.",
-        author: "María, 49 años"
+        quote: "Las recetas son fáciles y no me estresan. Incluso en días de poco ánimo, consigo hacerlas.",
+        author: "Marta, 51 años",
+        image: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800&auto=format&fit=crop" // Simple healthy food
       },
       {
-        quote: "Lo que más me gustó es que no te exige perfección. Estoy cansada y esta guía entiende eso. Voy paso a paso y me siento menos perdida.",
-        author: "Claudia, 52 años"
+        quote: "Me sentí capaz. No perfecta, capaz.",
+        author: "Daniela, 45 años",
+        image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" // Healthy snack bowl
       },
       {
-        quote: "Pensé que era solo otro ebook, pero me sorprendió. Es simple, directo y posible. Me ayudó a ordenar mi alimentación sin estrés.",
-        author: "Ana, 46 años"
+        quote: "Ingredientes normales, comida real. Eso hace toda la diferencia.",
+        author: "Rosa, 56 años",
+        image: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop" // Warm meal
+      },
+      {
+        quote: "Me ayudó a organizar mis comidas sin drama.",
+        author: "Silvia, 49 años",
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" // Light dinner/salad
+      },
+
+      {
+        quote: "Pensé que era solo otro ebook, pero me sorprendió por lo claro que es.",
+        author: "Carmen, 53 años",
+        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" // Mature woman portrait
+      },
+      {
+        quote: "Voy despacio, pero me siento acompañada.",
+        author: "Natalia, 48 años",
+        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop" // Smiling woman
+      },
+      {
+        quote: "No me juzga. Eso ya me ganó.",
+        author: "Teresa, 55 años",
+        image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop" // Woman at home
+      },
+      {
+        quote: "Es como tener una guía tranquila en casa.",
+        author: "Paula, 46 años",
+        image: "https://images.unsplash.com/photo-1569913486515-b74c0e6e5cb3?q=80&w=800&auto=format&fit=crop" // Relaxed woman
       }
     ],
     closing: "Cada cuerpo es diferente. Pero tener orientación clara hace toda la diferencia."
