@@ -10,11 +10,11 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ headline, subheadline, ctaText, image }) => {
   return (
-    <section className="relative bg-navy-900 pt-20 pb-0 overflow-hidden text-white border-b-4 border-gold-metallic">
+    <section className="relative bg-navy-900 pt-10 lg:pt-20 pb-0 overflow-hidden text-white border-b-4 border-gold-metallic">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gold-500/20 via-navy-900 to-navy-900"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-10 pb-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-4 pb-16 lg:pt-10 lg:pb-20">
         <div className="max-w-5xl mx-auto text-center space-y-8">
 
 
@@ -28,10 +28,6 @@ const Hero: React.FC<HeroProps> = ({ headline, subheadline, ctaText, image }) =>
           </div>
 
           <div className="flex flex-col items-center space-y-8 pt-8">
-            <button className="bg-gradient-to-r from-gold-400 to-gold-600 text-navy-900 px-10 py-5 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all transform hover:scale-105 uppercase tracking-wider relative overflow-hidden group">
-              <span className="relative z-10">{ctaText || "Quero Começar"}</span>
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
-            </button>
 
             <div className="flex items-center space-x-2 text-gold-400/80 text-sm font-medium tracking-wide">
               <span>★</span>
