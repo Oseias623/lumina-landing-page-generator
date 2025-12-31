@@ -6,6 +6,7 @@ interface SimplePricingContent {
     price: string;
     cta: string;
     details: string;
+    checkoutUrl: string;
 }
 
 interface SimplePricingProps {
@@ -37,9 +38,14 @@ const SimplePricing: React.FC<SimplePricingProps> = ({ content }) => {
                             {content.price}
                         </div>
                         <div className="w-full pt-4">
-                            <button className="w-full bg-gradient-to-r from-gold-400 to-gold-600 text-navy-900 font-bold text-lg md:text-xl py-5 px-8 rounded-full hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all transform hover:-translate-y-1">
+                            <a
+                                href={content.checkoutUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block w-full bg-gradient-to-r from-gold-400 to-gold-600 text-navy-900 font-bold text-lg md:text-xl py-5 px-8 rounded-full hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all transform hover:-translate-y-1"
+                            >
                                 {content.cta}
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

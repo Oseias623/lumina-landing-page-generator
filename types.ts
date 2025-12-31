@@ -70,6 +70,7 @@ export interface LandingPageContent {
     price: string;
     cta: string;
     details: string;
+    checkoutUrl: string;
   };
   audience: {
     forYou: {

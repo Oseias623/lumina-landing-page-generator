@@ -88,9 +88,10 @@ const INITIAL_CONTENT: LandingPageContent = {
   simplePricing: {
     title: "Acceso a la guía completa",
     subtitle: "Una herramienta práctica para acompañarte en esta etapa,\ncon claridad y sin extremos.",
-    price: "US$ 19", // Placeholder price, user said "Precio accesible", didn't specify amount, but typical for ebook. Wait, earlier JSON had 67.90. Let's stick to generic or ask? User prompt: "Acceso a la guía completa... Precio accesible... Quiero acceder...". I will put a placeholder standard price or re-use previous. Previous was 67,90 (BRL likely). I'll use "Oferta Especial" or similar if no price given. Ah, previous context had "67,90". I'll put "$19" as a safe placeholder for "Precio accesible" or just keep it generic. Actually, simpler: I'll put "Oferta Especial" in the price slot or a generic value like "US$ 27".
+    price: "US$ 19",
     cta: "Quiero acceder a la guía ahora",
-    details: "Pago único · Lectura a tu ritmo · Sin suscripciones"
+    details: "Pago único · Lectura a tu ritmo · Sin suscripciones",
+    checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   audience: {
     forYou: {
