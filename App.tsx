@@ -55,7 +55,7 @@ const INITIAL_CONTENT: LandingPageContent = {
       "Volver a sentir que tienes una base firme"
     ],
     closing: "No es una dieta estricta. No es un tratamiento. Es información práctica, pensada para la vida real, cuando el cuerpo cambia y necesitas cuidarte de otra manera.",
-    image: "/ebook-cover-green.png"
+    image: "/ebook-cover-green.webp"
   },
   whyItWorks: {
     title: "Porque en esta etapa, seguir haciendo lo mismo ya no alcanza",
@@ -84,15 +84,15 @@ const INITIAL_CONTENT: LandingPageContent = {
     title: "Recetas pensadas para el día a día",
     cards: [
       {
-        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop", // Healthy bowl/simple meal
+        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=800&auto=format&fit=crop&fm=webp", // Healthy bowl/simple meal
         text: "Opciones simples, nutritivas y fáciles."
       },
       {
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop", // Fresh salad components
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop&fm=webp", // Fresh salad components
         text: "Ingredientes accesibles para el día a día."
       },
       {
-        image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=800&auto=format&fit=crop", // Simple nutritious breakfast/snack
+        image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=800&auto=format&fit=crop&fm=webp", // Simple nutritious breakfast/snack
         text: "Preparaciones posibles, incluso en días de poco ánimo."
       }
     ],
@@ -219,7 +219,7 @@ const INITIAL_CONTENT: LandingPageContent = {
     cta: "¡DESCARGAR AHORA!",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
-  heroImage: "/ebook-cover-green.png",
+  heroImage: "/ebook-cover-green.webp",
   features: [
     { id: '1', title: 'Alívio Natural', description: 'Entenda quais alimentos ajudam a suavizar os picos de calor e o suor noturno.', icon: 'Heart' },
     { id: '2', title: 'Mente Serena', description: 'Como a nutrição pode ajudar a dissipar o nevoeiro mental e a irritabilidade.', icon: 'Brain' },
