@@ -152,35 +152,30 @@ const INITIAL_CONTENT: LandingPageContent = {
     closing: "Cada cuerpo es diferente. Pero tener orientación clara hace toda la diferencia."
   },
   bonuses: {
-    title: "Bonos incluidos sin costo adicional",
+    title: "Bonos exclusivos para complementar tu guía",
     items: [
       {
-        title: "Bono 1 — Plan Antiinflamatorio de 7 Días",
-        description: "Un plan simple para comenzar sin confusión, con comidas organizadas para tu primera semana.",
-        image: "/bonus-plan-7-dias.jpg"
+        title: "Bono 1 — Los 7 Enemigos de la Menopausia",
+        description: "Descubre qué alimentos y hábitos ocultos están empeorando tus síntomas sin que te des cuenta.",
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop" // Processed food/warning concept or stress
       },
       {
-        title: "Bono 2 — Lista de Compras Antiinflamatoria",
-        description: "Para saber exactamente qué comprar y facilitar tu rutina.",
-        image: "/bonus-lista-compras.jpg"
+        title: "Bono 2 — Nutrientes Clave en la Menopausia",
+        description: "Una guía directa sobre qué vitaminas y minerales necesita tu cuerpo ahora para proteger tus huesos y energía.",
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" // Fresh healthy ingredients
       },
       {
-        title: "Bono 3 — Recetas Rápidas (15 minutos o menos)",
-        description: "Para los días con poco tiempo o poco ánimo.",
-        image: "/bonus-recetas-rapidas.jpg"
+        title: "Bono 3 — Reset del Ritmo Circadiano",
+        description: "Estrategias simples para volver a regular tu reloj biológico y recuperar el sueño profundo.",
+        image: "https://images.unsplash.com/photo-1515890435782-59a5bb6e0c1b?q=80&w=800&auto=format&fit=crop" // Morning sun/sleep concept
       },
       {
-        title: "Bono 4 — Cenas para Dormir Mejor",
-        description: "Opciones pensadas para la noche y el descanso.",
-        image: "/bonus-cenas-dormir.jpg"
-      },
-      {
-        title: "Bono 5 — Snacks para la Ansiedad",
-        description: "Ideas simples para momentos de ansiedad, sin recurrir al azúcar.",
-        image: "/bonus-snacks-ansiedad.jpg"
+        title: "Bono 4 — Rutinas de Fuerza (15 Minutos)",
+        description: "Ejercicios breves y seguros para activar tu metabolismo y cuidar tu masa muscular, sin gimnasio.",
+        image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop" // Gentle exercise
       }
     ],
-    closing: "Todo incluido en un solo acceso, pensado para acompañarte de forma práctica y posible."
+    closing: "Herramientas prácticas para que tengas resultados más rápidos, incluidas gratis hoy."
   },
   simplePricing: {
     title: "Acceso a la guía completa",

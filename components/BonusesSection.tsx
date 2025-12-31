@@ -35,7 +35,7 @@ const BonusesSection: React.FC<BonusesSectionProps> = ({ content }) => {
                     <div className="h-1 w-24 bg-gold-500 mx-auto rounded-full"></div>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 gap-8">
                     {content.items.map((item, index) => (
                         <div key={index} className="group bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
                             <div className="relative aspect-[3/4] overflow-hidden bg-slate-100 border-b border-slate-50">
