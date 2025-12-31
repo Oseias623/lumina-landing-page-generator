@@ -1,6 +1,35 @@
+import React from 'react';
+import {
+  Heart,
+  Brain,
+  Zap,
+  Quote,
+  Star,
+  Check,
+  ShieldCheck,
+  RefreshCcw,
+  Sparkles,
+  Cpu,
+  X,
+  AlertCircle,
+  Rocket
+} from 'lucide-react';
 
-import React, { useEffect, useRef } from 'react';
-import { createIcons, icons } from 'lucide';
+const iconMap: Record<string, React.FC<any>> = {
+  Heart,
+  Brain,
+  Zap,
+  Quote,
+  Star,
+  Check,
+  ShieldCheck,
+  RefreshCcw,
+  Sparkles,
+  Cpu,
+  X,
+  AlertCircle,
+  Rocket
+};
 
 interface IconProps {
   name: string;
@@ -9,24 +38,16 @@ interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ name, className = "", size = 24 }) => {
-  const iconRef = useRef<HTMLSpanElement>(null);
+  // Normalize name to handle case sensitivity if needed, though usually strict matching is better for performance.
+  // Assuming input names match the keys (e.g. "Heart").
+  const IconComponent = iconMap[name] || iconMap[name.charAt(0).toUpperCase() + name.slice(1)];
 
-  useEffect(() => {
-    if (iconRef.current) {
-      // Small delay to ensure React has updated the DOM
-      createIcons({
-        icons,
-        nameAttr: 'data-lucide',
-        attrs: {
-          class: className,
-          width: size,
-          height: size,
-        },
-      });
-    }
-  }, [name, className, size]);
+  if (!IconComponent) {
+    console.warn(`Icon "${name}" not found in iconMap.`);
+    return null;
+  }
 
-  return <span ref={iconRef} data-lucide={name.toLowerCase()}></span>;
+  return <IconComponent className={className} size={size} />;
 };
 
 export default Icon;
