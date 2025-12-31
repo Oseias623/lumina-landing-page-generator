@@ -51,9 +51,9 @@ const Hero: React.FC<HeroProps> = ({ headline, subheadline, ctaText, image }) =>
       <div className="relative z-10 bg-gradient-to-r from-gold-600 to-gold-400 py-3 transform rotate-1 scale-105 origin-left shadow-2xl mt-12 border-y border-white/20">
         <div className="flex space-x-8 overflow-hidden whitespace-nowrap opacity-90">
           <div className="animate-marquee flex space-x-8 text-navy-900 font-bold tracking-[0.2em] uppercase text-sm">
-            <span>Energia Vital</span> • <span>Clareza Mental</span> • <span>Sono Reparador</span> • <span>Equilíbrio Hormonal</span> • <span>Bem-estar</span> •
-            <span>Energia Vital</span> • <span>Clareza Mental</span> • <span>Sono Reparador</span> • <span>Equilíbrio Hormonal</span> • <span>Bem-estar</span> •
-            <span>Energia Vital</span> • <span>Clareza Mental</span> • <span>Sono Reparador</span> • <span>Equilíbrio Hormonal</span> • <span>Bem-estar</span> •
+            <span>Energía Vital</span> • <span>Claridad Mental</span> • <span>Sueño Reparador</span> • <span>Equilibrio Hormonal</span> • <span>Bienestar</span> •
+            <span>Energía Vital</span> • <span>Claridad Mental</span> • <span>Sueño Reparador</span> • <span>Equilibrio Hormonal</span> • <span>Bienestar</span> •
+            <span>Energía Vital</span> • <span>Claridad Mental</span> • <span>Sueño Reparador</span> • <span>Equilibrio Hormonal</span> • <span>Bienestar</span> •
           </div>
         </div>
       </div>
