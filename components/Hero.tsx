@@ -29,10 +29,19 @@ const Hero: React.FC<HeroProps> = ({ headline, subheadline, ctaText, image }) =>
 
           <div className="flex flex-col items-center space-y-8 pt-8">
 
-            <div className="flex items-center space-x-2 text-gold-400/80 text-sm font-medium tracking-wide">
-              <span>★</span>
-              <span>Mais de 1.000 vidas transformadas</span>
-              <span>★</span>
+            <div className="flex flex-col items-center space-y-3">
+              <div className="flex -space-x-3">
+                {[1, 2, 3, 4].map(i => (
+                  <div key={i} className="w-10 h-10 rounded-full border-2 border-navy-900 bg-slate-800 flex items-center justify-center overflow-hidden relative z-10">
+                    <img src={`https://randomuser.me/api/portraits/women/${i + 20}.jpg`} alt="User" className="w-full h-full object-cover" />
+                  </div>
+                ))}
+              </div>
+              <div className="flex items-center space-x-2 text-gold-400/80 text-sm font-medium tracking-wide">
+                <span>★</span>
+                <span>Mais de 1.000 vidas transformadas</span>
+                <span>★</span>
+              </div>
             </div>
           </div>
         </div>
