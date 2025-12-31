@@ -164,23 +164,28 @@ const INITIAL_CONTENT: LandingPageContent = {
     items: [
       {
         title: "Bono 1 — Plan Antiinflamatorio de 7 Días",
-        description: "Un plan simple para comenzar sin confusión, con comidas organizadas para tu primera semana."
+        description: "Un plan simple para comenzar sin confusión, con comidas organizadas para tu primera semana.",
+        image: "/bonus-plan-7-dias.jpg"
       },
       {
         title: "Bono 2 — Lista de Compras Antiinflamatoria",
-        description: "Para saber exactamente qué comprar y facilitar tu rutina."
+        description: "Para saber exactamente qué comprar y facilitar tu rutina.",
+        image: "/bonus-lista-compras.jpg"
       },
       {
         title: "Bono 3 — Recetas Rápidas (15 minutos o menos)",
-        description: "Para los días con poco tiempo o poco ánimo."
+        description: "Para los días con poco tiempo o poco ánimo.",
+        image: "/bonus-recetas-rapidas.jpg"
       },
       {
         title: "Bono 4 — Cenas para Dormir Mejor",
-        description: "Opciones pensadas para la noche y el descanso."
+        description: "Opciones pensadas para la noche y el descanso.",
+        image: "/bonus-cenas-dormir.jpg"
       },
       {
         title: "Bono 5 — Snacks para la Ansiedad",
-        description: "Ideas simples para momentos de ansiedad, sin recurrir al azúcar."
+        description: "Ideas simples para momentos de ansiedad, sin recurrir al azúcar.",
+        image: "/bonus-snacks-ansiedad.jpg"
       }
     ],
     closing: "Todo incluido en un solo acceso, pensado para acompañarte de forma práctica y posible."
