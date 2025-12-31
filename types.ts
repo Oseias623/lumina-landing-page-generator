@@ -27,8 +27,7 @@ export interface LandingPageContent {
   subheadline: string;
   problemStatement: {
     title: string;
-    questions: string[];
-    summary: string;
+    description: string;
   };
   heroImage: string;
   features: Feature[];

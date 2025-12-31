@@ -14,14 +14,8 @@ const INITIAL_CONTENT: LandingPageContent = {
   headline: "Si la menopausia te dejó cansada, sin dormir bien y emocionalmente agotada, el problema no es tu fuerza de voluntad.",
   subheadline: "Ondas de calor, insomnio, ansiedad y falta de energía no aparecen “de la nada”.\nAparecen cuando el cuerpo cambia y nadie te explicó cómo cuidarlo en esta etapa.",
   problemStatement: {
-    title: "A sensação é de que o chão sumiu e ninguém te explicou o porquê.",
-    questions: [
-      "Os calorões que surgem do nada e roubam seu foco",
-      "O sono que não descansa e te deixa exausta",
-      "Uma ansiedade que aperta o peito sem motivo",
-      "A instabilidade emocional que te faz sentir 'estranha'"
-    ],
-    summary: "Você não está quebrada. O seu corpo está apenas em uma nova fase, com novas necessidades. Quando você entende como acolher essa mudança através da nutrição simples, a paz volta."
+    title: "No es tu culpa. Y no estás exagerando.",
+    description: "Muchas mujeres en la menopausia se sienten cansadas, ansiosas y perdidas. No porque hicieron algo mal, sino porque nadie les explicó cómo cuidarlo en esta etapa."
   },
   heroImage: "/mockup.png",
   features: [
@@ -84,8 +78,7 @@ const App: React.FC = () => {
 
         <ProblemSection
           title={content.problemStatement.title}
-          questions={content.problemStatement.questions}
-          summary={content.problemStatement.summary}
+          description={content.problemStatement.description}
         />
 
         <BenefitGrid features={content.features} />
