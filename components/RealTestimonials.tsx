@@ -74,15 +74,6 @@ const RealTestimonials: React.FC<RealTestimonialsProps> = ({ content }) => {
                         key={index}
                         className="flex-shrink-0 w-[300px] md:w-[350px] bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden snap-center flex flex-col"
                     >
-                        {item.image && (
-                            <div className="h-48 w-full overflow-hidden">
-                                <img
-                                    src={item.image}
-                                    alt="Testimonial visual"
-                                    className="w-full h-full object-cover transition-transform hover:scale-105 duration-700"
-                                />
-                            </div>
-                        )}
                         <div className="p-8 flex flex-col flex-grow">
                             <div className="flex-grow">
                                 <p className="text-lg text-slate-700 leading-relaxed italic mb-6 relative">

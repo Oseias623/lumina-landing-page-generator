@@ -118,43 +118,35 @@ const INITIAL_CONTENT: LandingPageContent = {
       {
         quote: "Las recetas son fáciles y no me estresan. Incluso en días de poco ánimo, consigo hacerlas.",
         author: "Marta, 51 años",
-        image: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800&auto=format&fit=crop" // Simple healthy food
       },
       {
         quote: "Me sentí capaz. No perfecta, capaz.",
         author: "Daniela, 45 años",
-        image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" // Healthy snack bowl
       },
       {
         quote: "Ingredientes normales, comida real. Eso hace toda la diferencia.",
         author: "Rosa, 56 años",
-        image: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop" // Warm meal
       },
       {
         quote: "Me ayudó a organizar mis comidas sin drama.",
         author: "Silvia, 49 años",
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" // Light dinner/salad
       },
 
       {
         quote: "Pensé que era solo otro ebook, pero me sorprendió por lo claro que es.",
         author: "Carmen, 53 años",
-        image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" // Mature woman portrait
       },
       {
         quote: "Voy despacio, pero me siento acompañada.",
         author: "Natalia, 48 años",
-        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop" // Smiling woman
       },
       {
         quote: "No me juzga. Eso ya me ganó.",
         author: "Teresa, 55 años",
-        image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=800&auto=format&fit=crop" // Woman at home
       },
       {
         quote: "Es como tener una guía tranquila en casa.",
         author: "Paula, 46 años",
-        image: "https://images.unsplash.com/photo-1569913486515-b74c0e6e5cb3?q=80&w=800&auto=format&fit=crop" // Relaxed woman
       }
     ],
     closing: "Cada cuerpo es diferente. Pero tener orientación clara hace toda la diferencia."
