@@ -28,7 +28,8 @@ const INITIAL_CONTENT: LandingPageContent = {
     text2: "Durante años, lo que hacías funcionaba. Comías igual. Dormías igual. Vivías igual. Y de repente, ya no.",
     highlight: "👉 Eso no es debilidad. Es una transición real.",
     closing: "No necesitas exigirte más. Necesitas información diferente. Una forma más amable, clara y posible de cuidarte en esta etapa.",
-    cta: "QUIERO ENTENDER ESTO CON MÁS CLARIDAD"
+    cta: "¡DESCARGAR AHORA!",
+    checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   identification: {
     title: "ESTE CONTENIDO FUE CREADO PARA TI SI HOY:",
@@ -103,7 +104,7 @@ const INITIAL_CONTENT: LandingPageContent = {
     title: "Acceso a la guía completa",
     subtitle: "Una herramienta práctica para acompañarte en esta etapa,\ncon claridad y sin extremos.",
     price: "US$ 19",
-    cta: "Quiero acceder a la guía ahora",
+    cta: "¡DESCARGAR AHORA!",
     details: "Pago único · Lectura a tu ritmo · Sin suscripciones",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
@@ -133,7 +134,8 @@ const INITIAL_CONTENT: LandingPageContent = {
       { question: "¿Sustituye un tratamiento médico?", answer: "No. Es contenido educativo para apoyar tu bienestar en esta etapa." }
     ],
     closing: "No se trata de hacerlo perfecto.\nSe trata de no atravesar esta etapa sola.",
-    cta: "Quiero acceder a la guía"
+    cta: "¡DESCARGAR AHORA!",
+    checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   heroImage: "/mockup.png",
   features: [
