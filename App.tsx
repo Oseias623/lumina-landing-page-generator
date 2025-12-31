@@ -8,6 +8,7 @@ import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Navbar from './components/Navbar';
 import IdentificationSection from './components/IdentificationSection';
+import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
