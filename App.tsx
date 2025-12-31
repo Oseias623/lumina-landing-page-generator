@@ -338,23 +338,7 @@ const App: React.FC = () => {
         */}
       </main>
 
-      <footer className="bg-[#0f1115] text-slate-500 py-20 text-center border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-amber-500 font-black text-2xl mb-8 uppercase tracking-tighter">
-            {content.businessName}
-          </div>
-          <div className="max-w-2xl mx-auto space-y-6">
-            <p className="text-sm">
-              Este guia é educativo e não substitui aconselhamento médico especializado.
-            </p>
-            <div className="flex justify-center space-x-8 text-[10px] uppercase tracking-widest font-bold">
-              <a href="#" className="hover:text-amber-500">Termos</a>
-              <a href="#" className="hover:text-amber-500">Privacidade</a>
-              <a href="#" className="hover:text-amber-500">Contato</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+
 
 
     </div >
