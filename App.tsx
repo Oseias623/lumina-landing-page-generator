@@ -126,6 +126,14 @@ const App: React.FC = () => {
           content={content.identification}
         />
 
+        <ProductShowcase
+          content={content.productShowcase}
+        />
+
+        <WhyItWorks
+          content={content.whyItWorks}
+        />
+
         <BenefitGrid features={content.features} />
 
         <section className="py-24 bg-[#0f1115] text-white relative border-y-4 border-amber-500">
