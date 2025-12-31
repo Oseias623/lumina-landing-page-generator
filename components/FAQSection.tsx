@@ -9,6 +9,7 @@ interface FAQSectionContent {
     items: FAQItem[];
     closing: string;
     cta: string;
+    checkoutUrl?: string;
 }
 
 interface FAQSectionProps {
@@ -34,7 +35,12 @@ const FAQSection: React.FC<FAQSectionProps> = ({ content }) => {
                         {content.closing}
                     </p>
 
-                    <a href="#pricing" className="inline-block bg-navy-900 text-white px-8 py-4 rounded-full font-bold hover:bg-navy-800 transition-colors">
+                    <a
+                        href={content.checkoutUrl || "#pricing"}
+                        target={content.checkoutUrl ? "_blank" : "_self"}
+                        rel={content.checkoutUrl ? "noopener noreferrer" : ""}
+                        className="inline-block bg-navy-900 text-white px-8 py-4 rounded-full font-bold hover:bg-navy-800 transition-colors"
+                    >
                         {content.cta}
                     </a>
                 </div>

@@ -9,6 +9,7 @@ interface ProblemSectionProps {
     highlight: string;
     closing: string;
     cta: string;
+    checkoutUrl?: string;
   }
 }
 
@@ -77,7 +78,12 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ content }) => {
                 {content.closing}
               </p>
 
-              <a href="#pricing" className="inline-block text-gold-600 font-bold border-b-2 border-gold-500 hover:text-gold-700 transition-colors uppercase tracking-widest text-sm py-1">
+              <a
+                href={content.checkoutUrl || "#pricing"}
+                target={content.checkoutUrl ? "_blank" : "_self"}
+                rel={content.checkoutUrl ? "noopener noreferrer" : ""}
+                className="inline-block text-gold-600 font-bold border-b-2 border-gold-500 hover:text-gold-700 transition-colors uppercase tracking-widest text-sm py-1"
+              >
                 {content.cta}
               </a>
             </div>

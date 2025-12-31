@@ -19,9 +19,14 @@ const Navbar: React.FC<NavbarProps> = ({ businessName }) => {
             <a href="#features" className="text-slate-300 hover:text-gold-400 font-medium transition-colors text-xs uppercase tracking-[0.15em]">Benefícios</a>
             <a href="#pricing" className="text-slate-300 hover:text-gold-400 font-medium transition-colors text-xs uppercase tracking-[0.15em]">Investimento</a>
             <a href="#testimonials" className="text-slate-300 hover:text-gold-400 font-medium transition-colors text-xs uppercase tracking-[0.15em]">Depoimentos</a>
-            <button className="bg-transparent border border-gold-500 text-gold-400 px-6 py-2 rounded-full font-bold hover:bg-gold-500 hover:text-navy-900 transition-all text-xs uppercase tracking-widest">
-              Começar Agora
-            </button>
+            <a
+              href="https://pay.hotmart.com/A103597268E?checkoutMode=10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border border-gold-500 text-gold-400 px-6 py-2 rounded-full font-bold hover:bg-gold-500 hover:text-navy-900 transition-all text-xs uppercase tracking-widest"
+            >
+              ¡DESCARGAR AHORA!
+            </a>
           </div>
         </div>
       </div>

@@ -33,6 +33,7 @@ export interface LandingPageContent {
     highlight: string;
     closing: string;
     cta: string;
+    checkoutUrl?: string;
   };
   identification: {
     title: string;
@@ -90,6 +91,7 @@ export interface LandingPageContent {
     items: { question: string; answer: string }[];
     closing: string;
     cta: string;
+    checkoutUrl?: string;
   };
   heroImage: string;
   features: Feature[];
