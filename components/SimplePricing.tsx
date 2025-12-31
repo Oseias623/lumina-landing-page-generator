@@ -54,16 +54,6 @@ const SimplePricing: React.FC<SimplePricingProps> = ({ content }) => {
                     {content.details}
                 </p>
 
-                <div className="mt-8 flex flex-col items-center justify-center space-y-3 opacity-70">
-                    <p className="text-sm font-medium text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-emerald-500" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        Pagamento seguro via
-                    </p>
-                    {/* Hotmart Logo SVG - simple white version */}
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Hotmart2019.svg" alt="Hotmart" className="h-6 brightness-0 invert opacity-80" />
-                </div>
             </div>
         </section>
     );
