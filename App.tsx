@@ -53,7 +53,7 @@ const INITIAL_CONTENT: LandingPageContent = {
       "Volver a sentir que tienes una base firme"
     ],
     closing: "No es una dieta estricta. No es un tratamiento. Es información práctica, pensada para la vida real, cuando el cuerpo cambia y necesitas cuidarte de otra manera.",
-    image: "/mockup.png"
+    image: "/ebook-cover-green.png"
   },
   whyItWorks: {
     title: "Porque en esta etapa, seguir haciendo lo mismo ya no alcanza",
@@ -164,7 +164,7 @@ const INITIAL_CONTENT: LandingPageContent = {
     cta: "¡DESCARGAR AHORA!",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
-  heroImage: "/mockup.png",
+  heroImage: "/ebook-cover-green.png",
   features: [
     { id: '1', title: 'Alívio Natural', description: 'Entenda quais alimentos ajudam a suavizar os picos de calor e o suor noturno.', icon: 'Heart' },
     { id: '2', title: 'Mente Serena', description: 'Como a nutrição pode ajudar a dissipar o nevoeiro mental e a irritabilidade.', icon: 'Brain' },
