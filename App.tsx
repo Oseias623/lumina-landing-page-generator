@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import IdentificationSection from './components/IdentificationSection';
 import ProductShowcase from './components/ProductShowcase';
 import WhyItWorks from './components/WhyItWorks';
+import GuideContents from './components/GuideContents';
 import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
@@ -58,6 +59,18 @@ const INITIAL_CONTENT: LandingPageContent = {
       "Crear una rutina posible, sin agotamiento"
     ],
     closing: "No se trata de hacerlo perfecto. Se trata de hacerlo más consciente y más amable. Pequeños ajustes. Más claridad. Más sensación de control."
+  },
+  guideContents: {
+    title: "Qué vas a encontrar dentro de la guía",
+    items: [
+      { bold: "Guía de alimentación antiinflamatoria,", text: "pensada específicamente para esta etapa de la vida" },
+      { bold: "Recetas simples y accesibles,", text: "para el día a día, sin ingredientes difíciles" },
+      { bold: "Orientación clara sobre combinaciones de alimentos,", text: "para facilitar tus comidas" },
+      { bold: "Ideas prácticas para organizar tu rutina,", text: "incluso en días de cansancio" },
+      { bold: "Enfoque realista,", text: "sin dietas estrictas ni exigencias imposibles" },
+      { bold: "Acceso digital inmediato,", text: "para leer a tu ritmo, cuando lo necesites" }
+    ],
+    closing: "Todo fue creado pensando en mujeres reales, con poco tiempo, poco descanso y muchas responsabilidades.\n\nNada de extremos. Nada de presión.\nSolo claridad y apoyo para atravesar esta etapa con más tranquilidad."
   },
   heroImage: "/mockup.png",
   features: [
@@ -134,7 +147,11 @@ const App: React.FC = () => {
           content={content.whyItWorks}
         />
 
-        <BenefitGrid features={content.features} />
+        <GuideContents
+          content={content.guideContents}
+        />
+
+        {/* <BenefitGrid features={content.features} /> */}
 
         <section className="py-24 bg-[#0f1115] text-white relative border-y-4 border-amber-500">
           <div className="max-w-4xl mx-auto px-4 text-center">

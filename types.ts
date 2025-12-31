@@ -52,6 +52,14 @@ export interface LandingPageContent {
     items: string[];
     closing: string;
   };
+  guideContents: {
+    title: string;
+    items: {
+      bold: string;
+      text: string;
+    }[];
+    closing: string;
+  };
   heroImage: string;
   features: Feature[];
   pricing: PricingPlan[];
