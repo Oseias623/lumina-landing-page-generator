@@ -7,7 +7,6 @@ import BenefitGrid from './components/BenefitGrid';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Navbar from './components/Navbar';
-import AIGeneratorSidebar from './components/AIGeneratorSidebar';
 import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
@@ -139,11 +138,7 @@ const App: React.FC = () => {
         </div>
       </footer>
 
-      <AIGeneratorSidebar
-        onContentGenerated={setContent}
-        isGenerating={isGenerating}
-        setIsGenerating={setIsGenerating}
-      />
+
     </div >
   );
 };
