@@ -7,15 +7,31 @@ import BenefitGrid from './components/BenefitGrid';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Navbar from './components/Navbar';
-import Icon from './components/Icon';
+import IdentificationSection from './components/IdentificationSection';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
   headline: "Si la menopausia te dejó cansada, sin dormir bien y emocionalmente agotada, el problema no es tu fuerza de voluntad.",
   subheadline: "Ondas de calor, insomnio, ansiedad y falta de energía no aparecen “de la nada”.\nAparecen cuando el cuerpo cambia y nadie te explicó cómo cuidarlo en esta etapa.",
   problemStatement: {
-    title: "No es tu culpa. Y no estás exagerando.",
-    description: "Muchas mujeres en la menopausia se sienten cansadas, ansiosas y perdidas. No porque hicieron algo mal, sino porque nadie les explicó cómo cuidarlo en esta etapa."
+    title: "No estás fallando.",
+    subtitle: "Y no estás exagerando.",
+    text: "Muchas mujeres llegan a la menopausia sintiéndose cansadas, ansiosas y perdidas. No porque hicieron algo mal. Sino porque el cuerpo cambia — y nadie les explicó cómo acompañar ese cambio.",
+    text2: "Durante años, lo que hacías funcionaba. Comías igual. Dormías igual. Vivías igual. Y de repente, ya no.",
+    highlight: "👉 Eso no es debilidad. Es una transición real.",
+    closing: "No necesitas exigirte más. Necesitas información diferente. Una forma más amable, clara y posible de cuidarte en esta etapa.",
+    cta: "QUIERO ENTENDER ESTO CON MÁS CLARIDAD"
+  },
+  identification: {
+    title: "ESTE CONTENIDO FUE CREADO PARA TI SI HOY:",
+    items: [
+      "Duermes, pero despiertas cansada",
+      "Sientes calor de repente, incluso de noche",
+      "Tienes ansiedad, irritabilidad o tristeza sin un motivo claro",
+      "Te miras al espejo y no te reconoces",
+      "Ya probaste tés, dietas o suplementos… y sigues igual"
+    ],
+    cta: "👉 No estás sola.\nY no estás imaginando nada.\n\nMuchas mujeres viven lo mismo. La diferencia está en tener o no una guía clara para atravesar esta etapa."
   },
   heroImage: "/mockup.png",
   features: [
@@ -77,8 +93,11 @@ const App: React.FC = () => {
         />
 
         <ProblemSection
-          title={content.problemStatement.title}
-          description={content.problemStatement.description}
+          content={content.problemStatement}
+        />
+
+        <IdentificationSection
+          content={content.identification}
         />
 
         <BenefitGrid features={content.features} />

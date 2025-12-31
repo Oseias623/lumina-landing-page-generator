@@ -27,7 +27,17 @@ export interface LandingPageContent {
   subheadline: string;
   problemStatement: {
     title: string;
-    description: string;
+    subtitle: string;
+    text: string;
+    text2: string;
+    highlight: string;
+    closing: string;
+    cta: string;
+  };
+  identification: {
+    title: string;
+    items: string[];
+    cta: string;
   };
   heroImage: string;
   features: Feature[];
