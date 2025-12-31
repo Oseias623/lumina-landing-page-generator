@@ -24,6 +24,8 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ content }) => {
                         <img
                             src={content.image}
                             alt="Book Mockup"
+                            width="500"
+                            height="750"
                             className="relative z-10 w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-700 drop-shadow-2xl"
                         />
                     </div>

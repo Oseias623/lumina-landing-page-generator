@@ -74,7 +74,6 @@ export interface LandingPageContent {
     items: {
       title: string;
       description: string;
-      image: string;
     }[];
     closing: string;
   };
