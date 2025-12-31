@@ -8,6 +8,8 @@ import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Navbar from './components/Navbar';
 import IdentificationSection from './components/IdentificationSection';
+import ProductShowcase from './components/ProductShowcase';
+import WhyItWorks from './components/WhyItWorks';
 import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
@@ -33,6 +35,29 @@ const INITIAL_CONTENT: LandingPageContent = {
       "Ya probaste tés, dietas o suplementos… y sigues igual"
     ],
     cta: "👉 No estás sola.\nY no estás imaginando nada.\n\nMuchas mujeres viven lo mismo. La diferencia está en tener o no una guía clara para atravesar esta etapa."
+  },
+  productShowcase: {
+    title: "Una guía práctica para acompañar tu cuerpo durante la menopausia",
+    description: "El Programa Antiinflamatorio para la Menopausia fue creado para mujeres que no quieren más confusión, más culpa ni más extremos. Es una guía clara y accesible para ayudarte a:",
+    items: [
+      "Organizar tu alimentación diaria",
+      "Entender qué alimentos te apoyan en esta etapa",
+      "Reducir la sensación de desorden físico y emocional",
+      "Volver a sentir que tienes una base firme"
+    ],
+    closing: "No es una dieta estricta. No es un tratamiento. Es información práctica, pensada para la vida real, cuando el cuerpo cambia y necesitas cuidarte de otra manera.",
+    image: "/mockup.png"
+  },
+  whyItWorks: {
+    title: "Porque en esta etapa, seguir haciendo lo mismo ya no alcanza",
+    description: "Durante años, tu cuerpo respondió a ciertos hábitos. Pero la menopausia marca un cambio. Y cuando el cuerpo cambia, la forma de cuidarlo también necesita cambiar.",
+    items: [
+      "Comprender qué alimentos apoyar hoy",
+      "Identificar combinaciones que te hacen sentir más estable",
+      "Reducir excesos sin prohibiciones",
+      "Crear una rutina posible, sin agotamiento"
+    ],
+    closing: "No se trata de hacerlo perfecto. Se trata de hacerlo más consciente y más amable. Pequeños ajustes. Más claridad. Más sensación de control."
   },
   heroImage: "/mockup.png",
   features: [

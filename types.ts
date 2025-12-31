@@ -39,6 +39,19 @@ export interface LandingPageContent {
     items: string[];
     cta: string;
   };
+  productShowcase: {
+    title: string;
+    description: string;
+    items: string[];
+    closing: string;
+    image: string;
+  };
+  whyItWorks: {
+    title: string;
+    description: string;
+    items: string[];
+    closing: string;
+  };
   heroImage: string;
   features: Feature[];
   pricing: PricingPlan[];
