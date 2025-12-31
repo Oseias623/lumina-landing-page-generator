@@ -60,6 +60,32 @@ export interface LandingPageContent {
     }[];
     closing: string;
   };
+  recipes: {
+    title: string;
+    items: string[];
+  };
+  simplePricing: {
+    title: string;
+    subtitle: string;
+    price: string;
+    cta: string;
+    details: string;
+  };
+  audience: {
+    forYou: {
+      title: string;
+      items: string[];
+    };
+    notForYou: {
+      title: string;
+      items: string[];
+    };
+  };
+  faq: {
+    items: { question: string; answer: string }[];
+    closing: string;
+    cta: string;
+  };
   heroImage: string;
   features: Feature[];
   pricing: PricingPlan[];

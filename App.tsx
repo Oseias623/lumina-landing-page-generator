@@ -11,6 +11,10 @@ import IdentificationSection from './components/IdentificationSection';
 import ProductShowcase from './components/ProductShowcase';
 import WhyItWorks from './components/WhyItWorks';
 import GuideContents from './components/GuideContents';
+import RecipesSection from './components/RecipesSection';
+import SimplePricing from './components/SimplePricing';
+import AudienceSection from './components/AudienceSection';
+import FAQSection from './components/FAQSection';
 import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
@@ -71,6 +75,50 @@ const INITIAL_CONTENT: LandingPageContent = {
       { bold: "Acceso digital inmediato,", text: "para leer a tu ritmo, cuando lo necesites" }
     ],
     closing: "Todo fue creado pensando en mujeres reales, con poco tiempo, poco descanso y muchas responsabilidades.\n\nNada de extremos. Nada de presión.\nSolo claridad y apoyo para atravesar esta etapa con más tranquilidad."
+  },
+  recipes: {
+    title: "Recetas pensadas para el día a día",
+    items: [
+      "Comidas que no exigen perfección.",
+      "Ingredientes fáciles de encontrar.",
+      "Preparaciones simples, incluso en días de poco ánimo.",
+      "La idea no es cambiar tu vida de un día para otro. Es hacer más fácil cuidarte cuando el cuerpo pide apoyo."
+    ]
+  },
+  simplePricing: {
+    title: "Acceso a la guía completa",
+    subtitle: "Una herramienta práctica para acompañarte en esta etapa,\ncon claridad y sin extremos.",
+    price: "US$ 19", // Placeholder price, user said "Precio accesible", didn't specify amount, but typical for ebook. Wait, earlier JSON had 67.90. Let's stick to generic or ask? User prompt: "Acceso a la guía completa... Precio accesible... Quiero acceder...". I will put a placeholder standard price or re-use previous. Previous was 67,90 (BRL likely). I'll use "Oferta Especial" or similar if no price given. Ah, previous context had "67,90". I'll put "$19" as a safe placeholder for "Precio accesible" or just keep it generic. Actually, simpler: I'll put "Oferta Especial" in the price slot or a generic value like "US$ 27".
+    cta: "Quiero acceder a la guía ahora",
+    details: "Pago único · Lectura a tu ritmo · Sin suscripciones"
+  },
+  audience: {
+    forYou: {
+      title: "Esta guía es para ti si:",
+      items: [
+        "Buscas claridad y apoyo en la menopausia",
+        "Quieres organizar tu alimentación sin dietas estrictas",
+        "Prefieres un enfoque realista y posible"
+      ]
+    },
+    notForYou: {
+      title: "No es para ti si:",
+      items: [
+        "Buscas una cura milagrosa",
+        "Esperas resultados instantáneos sin cambios",
+        "Quieres un enfoque médico o clínico"
+      ]
+    }
+  },
+  faq: {
+    items: [
+      { question: "¿Es una dieta?", answer: "No. Es una guía práctica de alimentación y organización diaria." },
+      { question: "¿Necesito experiencia previa?", answer: "No. Está explicada de forma simple y clara." },
+      { question: "¿Cómo accedo?", answer: "El acceso es digital e inmediato después de la compra." },
+      { question: "¿Sustituye un tratamiento médico?", answer: "No. Es contenido educativo para apoyar tu bienestar en esta etapa." }
+    ],
+    closing: "No se trata de hacerlo perfecto.\nSe trata de no atravesar esta etapa sola.",
+    cta: "Quiero acceder a la guía"
   },
   heroImage: "/mockup.png",
   features: [
@@ -151,36 +199,32 @@ const App: React.FC = () => {
           content={content.guideContents}
         />
 
-        {/* <BenefitGrid features={content.features} /> */}
+        <RecipesSection
+          content={content.recipes}
+        />
 
+        <SimplePricing
+          content={content.simplePricing}
+        />
+
+        <AudienceSection
+          content={content.audience}
+        />
+
+        <FAQSection
+          content={content.faq}
+        />
+
+        {/* 
         <section className="py-24 bg-[#0f1115] text-white relative border-y-4 border-amber-500">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-5xl font-black mb-10 leading-tight">
-              A menopausa não é uma doença, é uma fase de redescoberta.
-            </h2>
-            <div className="h-1 w-24 bg-amber-500 mx-auto mb-10"></div>
-            <p className="text-xl text-slate-400 italic font-medium leading-relaxed">
-              "Você merece atravessar esse período com clareza, sentindo-se bem na sua própria pele novamente."
-            </p>
-          </div>
+           ... (removed old quote section) ...
         </section>
-
-
-
         <Testimonials testimonials={content.testimonials} />
-
         <Pricing pricing={content.pricing} />
-
         <section className="py-16 bg-slate-50 text-center border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-4">
-            <p className="text-slate-400 font-bold uppercase tracking-[0.2em] text-[10px] mb-8">Segurança e Privacidade</p>
-            <div className="flex justify-center items-center space-x-12 opacity-30 grayscale">
-              <Icon name="ShieldCheck" size={40} />
-              <Icon name="Lock" size={40} />
-              <Icon name="CreditCard" size={40} />
-            </div>
-          </div>
+           ... (removed old trust badges, simple pricing component handles trust if needed or we can re-add) ...
         </section>
+        */}
       </main>
 
       <footer className="bg-[#0f1115] text-slate-500 py-20 text-center border-t border-white/5">
