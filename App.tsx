@@ -18,6 +18,7 @@ import SimplePricing from './components/SimplePricing';
 import GuaranteeSection from './components/GuaranteeSection';
 import AudienceSection from './components/AudienceSection';
 import FAQSection from './components/FAQSection';
+import CountdownTimer from './components/CountdownTimer';
 import Icon from './components/Icon';
 
 const INITIAL_CONTENT: LandingPageContent = {
@@ -176,7 +177,7 @@ const INITIAL_CONTENT: LandingPageContent = {
   simplePricing: {
     title: "Acceso a la guía completa",
     subtitle: "Una herramienta práctica para acompañarte en esta etapa,\ncon claridad y sin extremos.",
-    price: "US$ 6,90",
+    price: "US$ 9,90",
     cta: "¡DESCARGAR AHORA!",
     details: "Pago único · Lectura a tu ritmo · Sin suscripciones",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
@@ -270,6 +271,8 @@ const App: React.FC = () => {
 
 
 
+      <CountdownTimer />
+      <div className="h-10" />
       <main>
         <Hero
           headline={content.headline}
