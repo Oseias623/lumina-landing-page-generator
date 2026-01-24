@@ -82,7 +82,7 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ content }) => {
                 href={content.checkoutUrl || "#pricing"}
                 target={content.checkoutUrl ? "_blank" : "_self"}
                 rel={content.checkoutUrl ? "noopener noreferrer" : ""}
-                className="inline-block text-gold-600 font-bold border-b-2 border-gold-500 hover:text-gold-700 transition-colors uppercase tracking-widest text-sm py-1"
+                className="inline-block bg-gold-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-gold-600 hover:shadow-gold-500/30 hover:scale-105 transform transition-all duration-300 uppercase tracking-wide"
               >
                 {content.cta}
               </a>
