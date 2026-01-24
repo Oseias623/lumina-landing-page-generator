@@ -20,6 +20,7 @@ import AudienceSection from './components/AudienceSection';
 import FAQSection from './components/FAQSection';
 import CountdownTimer from './components/CountdownTimer';
 import Icon from './components/Icon';
+import DailyRoutineApp from './components/DailyRoutineApp';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
@@ -68,6 +69,20 @@ const INITIAL_CONTENT: LandingPageContent = {
       "Crear una rutina posible, sin agotamiento"
     ],
     closing: "No se trata de hacerlo perfecto. Se trata de hacerlo más consciente y más amable. Pequeños ajustes. Más claridad. Más sensación de control."
+  },
+  dailyRoutine: {
+    title: "Una app que simplifica tu día a día",
+    subtitle: "TU ALIADA DE BOLSILLO",
+    description: "Olvídate de las listas interminables y la confusión. Con la App Menopausia Con Claridad, transformamos grandes cambios en pequeños pasos diarios.",
+    items: [
+      "Checklist diario de autocuidado",
+      "Recordatorios amables de hidratación",
+      "Sugerencias de comidas antiinflamatorias",
+      "Pausas de respiración guiadas",
+      "Organización sin estrés"
+    ],
+    closing: "Porque cuando tu rutina se ordena, tu mente se calma.",
+    image: "/app-mockup.png"
   },
   guideContents: {
     title: "Qué vas a encontrar dentro de la guía",
@@ -295,6 +310,10 @@ const App: React.FC = () => {
 
         <WhyItWorks
           content={content.whyItWorks}
+        />
+
+        <DailyRoutineApp
+          content={content.dailyRoutine}
         />
 
         <GuideContents

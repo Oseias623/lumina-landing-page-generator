@@ -61,6 +61,14 @@ export interface LandingPageContent {
     }[];
     closing: string;
   };
+  dailyRoutine: {
+    title: string;
+    subtitle: string;
+    description: string;
+    items: string[];
+    closing: string;
+    image: string;
+  };
   recipes: {
     title: string;
     cards: {
