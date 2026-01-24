@@ -4,16 +4,37 @@ const CountdownTimer: React.FC = () => {
   const [seconds, setSeconds] = useState(15 * 60);
 
   useEffect(() => {
-    if (seconds <= 0) return;
+    // Check for existing start time
+    const storedStartTime = localStorage.getItem('menopause_offer_timer_start');
+    const DURATION = 15 * 60 * 1000; // 15 minutes in ms
+
+    let startTime: number;
+
+    if (storedStartTime) {
+      startTime = parseInt(storedStartTime, 10);
+    } else {
+      startTime = Date.now();
+      localStorage.setItem('menopause_offer_timer_start', startTime.toString());
+    }
+
     const interval = setInterval(() => {
-      setSeconds((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
+      const now = Date.now();
+      const elapsed = now - startTime;
+      const remaining = Math.max(0, Math.ceil((DURATION - elapsed) / 1000));
+
+      setSeconds(remaining);
+
+      if (remaining <= 0) {
+        // Optional: clear interval or handle expiration behaviour
+        // clearInterval(interval); 
+      }
     }, 1000);
+
+    // Initial calculation
+    const now = Date.now();
+    const elapsed = now - startTime;
+    setSeconds(Math.max(0, Math.ceil((DURATION - elapsed) / 1000)));
+
     return () => clearInterval(interval);
   }, []);
 

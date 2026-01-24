@@ -34,8 +34,13 @@ const SimplePricing: React.FC<SimplePricingProps> = ({ content }) => {
                         <span className="text-gold-400 font-bold tracking-widest uppercase text-sm">
                             Oferta Especial
                         </span>
-                        <div className="text-5xl md:text-7xl font-serif font-bold text-white">
-                            {content.price}
+                        <div className="flex flex-col items-center justify-center space-y-2">
+                            <span className="text-xl md:text-2xl text-slate-400 line-through decoration-gold-600/50 decoration-2">
+                                De US$ 19,90
+                            </span>
+                            <span className="text-5xl md:text-7xl font-serif font-bold text-white">
+                                por {content.price}
+                            </span>
                         </div>
                         <div className="w-full pt-4">
                             <a
