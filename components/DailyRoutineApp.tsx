@@ -72,7 +72,7 @@ const DailyRoutineApp: React.FC<DailyRoutineAppProps> = ({ content }) => {
                                 </svg>
                             </div>
                             <div>
-                                <p className="text-sm font-bold text-navy-900">Rotina organizada</p>
+                                <p className="text-sm font-bold text-navy-900">Rutina organizada</p>
                                 <p className="text-xs text-slate-500">Mente tranquila</p>
                             </div>
                         </div>
