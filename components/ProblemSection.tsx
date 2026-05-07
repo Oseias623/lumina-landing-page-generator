@@ -38,7 +38,7 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ content }) => {
   return (
     <section
       ref={sectionRef}
-      className={`py-24 bg-white text-navy-900 relative overflow-hidden transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`py-14 md:py-24 bg-white text-navy-900 relative overflow-hidden transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
     >
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5 pointer-events-none">
@@ -47,7 +47,7 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ content }) => {
       </div>
 
       <div className={`max-w-4xl mx-auto px-4 sm:px-6 relative z-10 transition-transform duration-1000 transform ${isVisible ? 'translate-y-0' : 'translate-y-20'}`}>
-        <div className="text-center space-y-12">
+        <div className="text-center space-y-8 md:space-y-12">
 
           <div className="space-y-4">
             <h2 className="text-3xl md:text-5xl font-serif font-bold text-navy-900 leading-tight">
@@ -67,7 +67,7 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ content }) => {
               {content.text2}
             </p>
 
-            <div className="bg-navy-50 p-8 rounded-2xl border-l-4 border-gold-500 shadow-sm my-8 transform transition-transform duration-700 hover:scale-[1.02]">
+            <div className="bg-navy-50 p-5 md:p-8 rounded-2xl border-l-4 border-gold-500 shadow-sm my-8 transform transition-transform duration-700 hover:scale-[1.02]">
               <p className="text-xl md:text-2xl font-bold text-navy-900">
                 {content.highlight}
               </p>
