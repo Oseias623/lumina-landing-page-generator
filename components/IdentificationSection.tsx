@@ -12,10 +12,10 @@ interface IdentificationSectionProps {
 
 const IdentificationSection: React.FC<IdentificationSectionProps> = ({ content }) => {
     return (
-        <section className="py-20 bg-navy-900 text-white relative overflow-hidden border-y border-gold-metallic/20">
+        <section className="py-12 md:py-20 bg-navy-900 text-white relative overflow-hidden border-y border-gold-metallic/20">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 relative z-10">
 
-                <div className="text-center mb-12">
+                <div className="text-center mb-8 md:mb-12">
                     <h2 className="text-2xl md:text-3xl font-serif text-slate-200 tracking-wide uppercase">
                         {content.title}
                     </h2>
@@ -37,7 +37,7 @@ const IdentificationSection: React.FC<IdentificationSectionProps> = ({ content }
                     ))}
                 </div>
 
-                <div className="mt-12 text-center bg-navy-800/50 p-8 rounded-2xl border border-gold-500/30">
+                <div className="mt-12 text-center bg-navy-800/50 p-5 md:p-8 rounded-2xl border border-gold-500/30">
                     <p className="text-xl md:text-2xl font-serif text-gold-400 italic font-medium leading-relaxed whitespace-pre-line">
                         {content.cta}
                     </p>

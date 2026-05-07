@@ -3,60 +3,49 @@ import React, { useState } from 'react';
 import { LandingPageContent } from './types';
 import Hero from './components/Hero';
 import ProblemSection from './components/ProblemSection';
-import BenefitGrid from './components/BenefitGrid';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
-import Navbar from './components/Navbar';
 import IdentificationSection from './components/IdentificationSection';
 import ProductShowcase from './components/ProductShowcase';
-import WhyItWorks from './components/WhyItWorks';
-import GuideContents from './components/GuideContents';
-import RecipesSection from './components/RecipesSection';
-import RealTestimonials from './components/RealTestimonials';
-import BonusesSection from './components/BonusesSection';
 import SimplePricing from './components/SimplePricing';
 import GuaranteeSection from './components/GuaranteeSection';
-import AudienceSection from './components/AudienceSection';
 import FAQSection from './components/FAQSection';
 import CountdownTimer from './components/CountdownTimer';
-import Icon from './components/Icon';
-import DailyRoutineApp from './components/DailyRoutineApp';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
-  headline: "Si la menopausia te dejó cansada, sin dormir bien y emocionalmente agotada, el problema no es tu fuerza de voluntad.",
-  subheadline: "Ondas de calor, insomnio, ansiedad y falta de energía no aparecen “de la nada”.\nAparecen cuando el cuerpo cambia y nadie te explicó cómo cuidarlo en esta etapa.",
+  headline: "Menopausia con más claridad: organiza tu alimentación sin dietas extremas ni promesas milagrosas.",
+  subheadline: "Una guía digital práctica para entender qué comer, cómo ordenar tu rutina y sentirte más acompañada en esta etapa.\nAcceso inmediato por US$ 9,90.",
   problemStatement: {
     title: "No estás fallando.",
-    subtitle: "Y no estás exagerando.",
-    text: "Muchas mujeres llegan a la menopausia sintiéndose cansadas, ansiosas y perdidas. No porque hicieron algo mal. Sino porque el cuerpo cambia — y nadie les explicó cómo acompañar ese cambio.",
-    text2: "Durante años, lo que hacías funcionaba. Comías igual. Dormías igual. Vivías igual. Y de repente, ya no.",
-    highlight: "👉 Eso no es debilidad. Es una transición real.",
-    closing: "No necesitas exigirte más. Necesitas información diferente. Una forma más amable, clara y posible de cuidarte en esta etapa.",
-    cta: "¡DESCARGAR AHORA!",
+    subtitle: "Tu cuerpo está cambiando.",
+    text: "Si antes comías igual y te sentías bien, pero ahora todo parece más difícil, no significa que perdiste el control.",
+    text2: "La menopausia cambia la forma en que tu cuerpo responde a la comida, al descanso y a la rutina diaria.",
+    highlight: "Lo que necesitas no es exigirte más. Es tener una guía simple para saber por dónde empezar.",
+    closing: "Menopausia Con Claridad fue creada para ayudarte a ordenar tu alimentación con calma, sin extremos y sin promesas imposibles.",
+    cta: "Quiero acceder a la guía",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   identification: {
-    title: "ESTE CONTENIDO FUE CREADO PARA TI SI HOY:",
+    title: "ESTA GUÍA ES PARA TI SI HOY:",
     items: [
-      "Duermes, pero despiertas cansada",
-      "Sientes calor de repente, incluso de noche",
-      "Tienes ansiedad, irritabilidad o tristeza sin un motivo claro",
-      "Te miras al espejo y no te reconoces",
-      "Ya probaste tés, dietas o suplementos… y sigues igual"
+      "Quieres saber qué comer sin vivir a dieta",
+      "Te sientes confundida con tantos consejos sobre menopausia",
+      "Buscas una forma simple de organizar tus comidas",
+      "Prefieres pasos posibles en vez de reglas extremas",
+      "Quieres cuidarte mejor, pero sin presión por hacerlo perfecto"
     ],
-    cta: "👉 No estás sola.\nY no estás imaginando nada.\n\nMuchas mujeres viven lo mismo. La diferencia está en tener o no una guía clara para atravesar esta etapa."
+    cta: "No necesitas cambiar toda tu vida de un día para otro.\nNecesitas un primer paso claro y posible."
   },
   productShowcase: {
-    title: "Una guía práctica para acompañar tu cuerpo durante la menopausia",
-    description: "El Programa Antiinflamatorio para la Menopausia fue creado para mujeres que no quieren más confusión, más culpa ni más extremos. Es una guía clara y accesible para ayudarte a:",
+    title: "Qué recibes al acceder hoy",
+    description: "Por US$ 9,90 recibes una guía digital educativa y práctica para organizar tu alimentación durante la menopausia, sin dietas extremas ni promesas milagrosas.",
     items: [
-      "Organizar tu alimentación diaria",
-      "Entender qué alimentos te apoyan en esta etapa",
-      "Reducir la sensación de desorden físico y emocional",
-      "Volver a sentir que tienes una base firme"
+      "Guía de alimentación antiinflamatoria explicada de forma simple",
+      "Recetas e ideas de comidas para el día a día",
+      "Orientación para montar una rutina posible, incluso en días de cansancio",
+      "Checklist y materiales de apoyo para usar a tu ritmo",
+      "Bonos educativos sobre hábitos, nutrientes y descanso"
     ],
-    closing: "No es una dieta estricta. No es un tratamiento. Es información práctica, pensada para la vida real, cuando el cuerpo cambia y necesitas cuidarte de otra manera.",
+    closing: "No sustituye una consulta médica. Es una herramienta clara para ayudarte a tomar mejores decisiones en tu rutina diaria.",
     image: "/ebook-cover-green.webp"
   },
   whyItWorks: {
@@ -190,20 +179,20 @@ const INITIAL_CONTENT: LandingPageContent = {
     closing: "Herramientas prácticas para que tengas resultados más rápidos, incluidas gratis hoy."
   },
   simplePricing: {
-    title: "Acceso a la guía completa",
-    subtitle: "Una herramienta práctica para acompañarte en esta etapa,\ncon claridad y sin extremos.",
+    title: "Accede ahora a Menopausia Con Claridad",
+    subtitle: "Guía digital completa + materiales de apoyo para organizar tu alimentación con más calma y dirección.",
     price: "US$ 9,90",
-    cta: "¡DESCARGAR AHORA!",
-    details: "Pago único · Lectura a tu ritmo · Sin suscripciones",
+    cta: "Sí, quiero acceder ahora",
+    details: "Pago único · Acceso digital inmediato · Garantía de 7 días",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   guarantee: {
     title: "Garantía de 7 días, sin riesgos",
-    text: "Sabemos que esta etapa viene cargada de dudas. Por eso, tienes 7 días para acceder a la guía, leer con calma y ver si este enfoque hace sentido para ti.\n\nSi sientes que no es lo que necesitas ahora, puedes solicitar la devolución dentro de ese plazo.",
+    text: "Puedes acceder a la guía, revisarla con calma y ver si este enfoque hace sentido para ti.\n\nSi sientes que no es lo que necesitas ahora, puedes solicitar la devolución dentro del plazo de garantía de Hotmart.",
     items: [
-      "Sin explicaciones",
-      "Sin preguntas",
-      "Sin presión"
+      "Acceso inmediato",
+      "Pago seguro",
+      "Sin suscripciones"
     ]
   },
   audience: {
@@ -226,13 +215,15 @@ const INITIAL_CONTENT: LandingPageContent = {
   },
   faq: {
     items: [
-      { question: "¿Es una dieta?", answer: "No. Es una guía práctica de alimentación y organización diaria." },
-      { question: "¿Necesito experiencia previa?", answer: "No. Está explicada de forma simple y clara." },
-      { question: "¿Cómo accedo?", answer: "El acceso es digital e inmediato después de la compra." },
-      { question: "¿Sustituye un tratamiento médico?", answer: "No. Es contenido educativo para apoyar tu bienestar en esta etapa." }
+      { question: "¿Es una dieta estricta?", answer: "No. Es una guía práctica para ayudarte a organizar tu alimentación sin extremos, prohibiciones exageradas ni presión por hacerlo perfecto." },
+      { question: "¿Qué recibo después de comprar?", answer: "Recibes acceso digital inmediato a la guía y a los materiales incluidos, para leer y usar a tu ritmo." },
+      { question: "¿Sirve si estoy en premenopausia?", answer: "Puede ayudarte si ya estás notando cambios y quieres organizar tu alimentación con más claridad. El contenido es educativo y práctico." },
+      { question: "¿Cuánto cuesta?", answer: "El acceso completo cuesta US$ 9,90 en pago único." },
+      { question: "¿Esto reemplaza una consulta médica?", answer: "No. Es contenido educativo sobre alimentación y organización diaria. Si tienes síntomas intensos, condiciones de salud o usas medicación, consulta a tu médica o nutricionista." },
+      { question: "¿Tiene garantía?", answer: "Sí. Tienes 7 días de garantía según las condiciones de compra de Hotmart." }
     ],
-    closing: "No se trata de hacerlo perfecto.\nSe trata de no atravesar esta etapa sola.",
-    cta: "¡DESCARGAR AHORA!",
+    closing: "No necesitas hacerlo perfecto.\nSolo necesitas empezar con más claridad.",
+    cta: "Acceder ahora por US$ 9,90",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   heroImage: "/ebook-cover-green.webp",
@@ -268,7 +259,7 @@ const INITIAL_CONTENT: LandingPageContent = {
       avatar: ""
     }
   ],
-  ctaText: "Quero entender como me alimentar nessa fase"
+  ctaText: "Acceder ahora por US$ 9,90"
 };
 
 const App: React.FC = () => {
@@ -308,40 +299,12 @@ const App: React.FC = () => {
           content={content.productShowcase}
         />
 
-        <WhyItWorks
-          content={content.whyItWorks}
-        />
-
-        <DailyRoutineApp
-          content={content.dailyRoutine}
-        />
-
-        <GuideContents
-          content={content.guideContents}
-        />
-
-        <RecipesSection
-          content={content.recipes}
-        />
-
-        <RealTestimonials
-          content={content.realTestimonials}
-        />
-
-        <BonusesSection
-          content={content.bonuses}
-        />
-
         <SimplePricing
           content={content.simplePricing}
         />
 
         <GuaranteeSection
           content={content.guarantee}
-        />
-
-        <AudienceSection
-          content={content.audience}
         />
 
         <FAQSection

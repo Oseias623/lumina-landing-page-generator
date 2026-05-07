@@ -14,9 +14,9 @@ interface ProductShowcaseProps {
 
 const ProductShowcase: React.FC<ProductShowcaseProps> = ({ content }) => {
     return (
-        <section className="py-24 bg-white text-navy-900 border-t border-navy-100">
+        <section className="py-14 md:py-24 bg-white text-navy-900 border-t border-navy-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
 
                     {/* Mockup Column */}
                     <div className="order-2 lg:order-1 relative">
@@ -31,7 +31,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ content }) => {
                     </div>
 
                     {/* Content Column */}
-                    <div className="order-1 lg:order-2 space-y-8">
+                    <div className="order-1 lg:order-2 space-y-6 md:space-y-8">
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-navy-900 leading-tight">
                             {content.title}
                         </h2>

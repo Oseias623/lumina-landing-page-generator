@@ -18,10 +18,10 @@ interface FAQSectionProps {
 
 const FAQSection: React.FC<FAQSectionProps> = ({ content }) => {
     return (
-        <section className="py-24 bg-white text-navy-900">
+        <section className="py-14 md:py-24 bg-white text-navy-900">
             <div className="max-w-3xl mx-auto px-4 sm:px-6">
 
-                <div className="space-y-10 mb-16">
+                <div className="space-y-7 md:space-y-10 mb-10 md:mb-16">
                     {content.items.map((item, index) => (
                         <div key={index} className="border-b border-slate-100 pb-8 last:border-0">
                             <h3 className="text-xl font-bold text-navy-900 mb-3">{item.question}</h3>
@@ -30,7 +30,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ content }) => {
                     ))}
                 </div>
 
-                <div className="text-center bg-navy-50 rounded-2xl p-10 border border-navy-100">
+                <div className="text-center bg-navy-50 rounded-2xl p-6 md:p-10 border border-navy-100">
                     <p className="text-xl font-serif text-navy-900 italic mb-8">
                         {content.closing}
                     </p>

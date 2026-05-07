@@ -15,7 +15,7 @@ interface SimplePricingProps {
 
 const SimplePricing: React.FC<SimplePricingProps> = ({ content }) => {
     return (
-        <section id="pricing" className="py-24 bg-navy-900 text-white relative overflow-hidden">
+        <section id="pricing" className="py-14 md:py-24 bg-navy-900 text-white relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gold-500/10 via-navy-900 to-navy-900 pointer-events-none"></div>
 
@@ -25,11 +25,11 @@ const SimplePricing: React.FC<SimplePricingProps> = ({ content }) => {
                     {content.title}
                 </h2>
 
-                <p className="text-xl text-slate-300 mb-12 font-light leading-relaxed whitespace-pre-line">
+                <p className="text-xl text-slate-300 mb-8 md:mb-12 font-light leading-relaxed whitespace-pre-line">
                     {content.subtitle}
                 </p>
 
-                <div className="bg-white/5 backdrop-blur-sm border border-gold-500/30 rounded-3xl p-10 md:p-14 mb-10 transform hover:scale-[1.01] transition-transform duration-500 shadow-2xl">
+                <div className="bg-white/5 backdrop-blur-sm border border-gold-500/30 rounded-3xl p-6 md:p-14 mb-10 transform hover:scale-[1.01] transition-transform duration-500 shadow-2xl">
                     <div className="flex flex-col items-center space-y-6">
                         <span className="text-gold-400 font-bold tracking-widest uppercase text-sm">
                             Oferta Especial
