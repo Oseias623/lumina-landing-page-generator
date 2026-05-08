@@ -226,7 +226,7 @@ const INITIAL_CONTENT: LandingPageContent = {
     cta: "Acceder ahora por US$ 19,90",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
-  heroImage: "/ebook-cover-green.webp",
+  heroImage: "/app-mockup.png",
   features: [
     { id: '1', title: 'Alívio Natural', description: 'Entenda quais alimentos ajudam a suavizar os picos de calor e o suor noturno.', icon: 'Heart' },
     { id: '2', title: 'Mente Serena', description: 'Como a nutrição pode ajudar a dissipar o nevoeiro mental e a irritabilidade.', icon: 'Brain' },
