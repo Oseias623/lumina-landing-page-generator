@@ -12,8 +12,8 @@ import CountdownTimer from './components/CountdownTimer';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
-  headline: "Menopausia con más claridad: organiza tu alimentación sin dietas extremas ni promesas milagrosas.",
-  subheadline: "Una guía digital práctica para entender qué comer, cómo ordenar tu rutina y sentirte más acompañada en esta etapa.\nAcceso inmediato por US$ 9,90.",
+  headline: "No es solo una guía sobre menopausia. Es una experiencia digital para crear tu rutina diaria.",
+  subheadline: "Accede a un webapp simple con un creador de rutinas personalizado para organizar alimentación, hábitos y pequeños cuidados durante la menopausia.\nAcceso inmediato por US$ 19,90.",
   problemStatement: {
     title: "No estás fallando.",
     subtitle: "Tu cuerpo está cambiando.",
@@ -37,16 +37,16 @@ const INITIAL_CONTENT: LandingPageContent = {
   },
   productShowcase: {
     title: "Qué recibes al acceder hoy",
-    description: "Por US$ 9,90 recibes una guía digital educativa y práctica para organizar tu alimentación durante la menopausia, sin dietas extremas ni promesas milagrosas.",
+    description: "Menopausia Con Claridad no fue creado para que descargues un material y lo olvides. Es una experiencia digital en formato webapp, pensada para ayudarte a transformar información en una rutina posible.",
     items: [
-      "Guía de alimentación antiinflamatoria explicada de forma simple",
-      "Recetas e ideas de comidas para el día a día",
-      "Orientación para montar una rutina posible, incluso en días de cansancio",
-      "Checklist y materiales de apoyo para usar a tu ritmo",
-      "Bonos educativos sobre hábitos, nutrientes y descanso"
+      "Webapp fácil de usar desde el celular",
+      "Creador de rutinas personalizado para organizar tus hábitos diarios",
+      "Guía educativa sobre alimentación y cuidados en la menopausia",
+      "Ideas simples de comidas, hábitos y pequeños pasos para aplicar en la vida real",
+      "Acceso inmediato para usar a tu ritmo"
     ],
-    closing: "No sustituye una consulta médica. Es una herramienta clara para ayudarte a tomar mejores decisiones en tu rutina diaria.",
-    image: "/ebook-cover-green.webp"
+    closing: "No sustituye una consulta médica. Es una herramienta práctica para ayudarte a salir de la confusión y empezar con más claridad.",
+    image: "/app-mockup.png"
   },
   whyItWorks: {
     title: "Porque en esta etapa, seguir haciendo lo mismo ya no alcanza",
@@ -179,10 +179,10 @@ const INITIAL_CONTENT: LandingPageContent = {
     closing: "Herramientas prácticas para que tengas resultados más rápidos, incluidas gratis hoy."
   },
   simplePricing: {
-    title: "Accede ahora a Menopausia Con Claridad",
-    subtitle: "Guía digital completa + materiales de apoyo para organizar tu alimentación con más calma y dirección.",
-    price: "US$ 9,90",
-    cta: "Sí, quiero acceder ahora",
+    title: "Crea tu rutina personalizada hoy",
+    subtitle: "Webapp + guía digital + materiales de apoyo para organizar tus hábitos con más calma y dirección.",
+    price: "US$ 19,90",
+    cta: "Sí, quiero crear mi rutina",
     details: "Pago único · Acceso digital inmediato · Garantía de 7 días",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
@@ -218,12 +218,12 @@ const INITIAL_CONTENT: LandingPageContent = {
       { question: "¿Es una dieta estricta?", answer: "No. Es una guía práctica para ayudarte a organizar tu alimentación sin extremos, prohibiciones exageradas ni presión por hacerlo perfecto." },
       { question: "¿Qué recibo después de comprar?", answer: "Recibes acceso digital inmediato a la guía y a los materiales incluidos, para leer y usar a tu ritmo." },
       { question: "¿Sirve si estoy en premenopausia?", answer: "Puede ayudarte si ya estás notando cambios y quieres organizar tu alimentación con más claridad. El contenido es educativo y práctico." },
-      { question: "¿Cuánto cuesta?", answer: "El acceso completo cuesta US$ 9,90 en pago único." },
+      { question: "¿Cuánto cuesta?", answer: "El acceso completo cuesta US$ 19,90 en pago único." },
       { question: "¿Esto reemplaza una consulta médica?", answer: "No. Es contenido educativo sobre alimentación y organización diaria. Si tienes síntomas intensos, condiciones de salud o usas medicación, consulta a tu médica o nutricionista." },
       { question: "¿Tiene garantía?", answer: "Sí. Tienes 7 días de garantía según las condiciones de compra de Hotmart." }
     ],
     closing: "No necesitas hacerlo perfecto.\nSolo necesitas empezar con más claridad.",
-    cta: "Acceder ahora por US$ 9,90",
+    cta: "Acceder ahora por US$ 19,90",
     checkoutUrl: "https://pay.hotmart.com/A103597268E?checkoutMode=10"
   },
   heroImage: "/ebook-cover-green.webp",
@@ -259,7 +259,7 @@ const INITIAL_CONTENT: LandingPageContent = {
       avatar: ""
     }
   ],
-  ctaText: "Acceder ahora por US$ 9,90"
+  ctaText: "Crear mi rutina personalizada"
 };
 
 const App: React.FC = () => {
