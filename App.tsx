@@ -12,8 +12,8 @@ import CountdownTimer from './components/CountdownTimer';
 
 const INITIAL_CONTENT: LandingPageContent = {
   businessName: "Cuidado e Clareza",
-  headline: "No es solo una guía sobre menopausia. Es una experiencia digital para crear tu rutina diaria.",
-  subheadline: "Accede a un webapp simple con un creador de rutinas personalizado para organizar alimentación, hábitos y pequeños cuidados durante la menopausia.\nAcceso inmediato por US$ 19,90.",
+  headline: "No es solo una guía sobre menopausia. Es una experiencia digital para crear tu rutina diaria según tu perfil.",
+  subheadline: "Accede a un webapp simple con un creador de rutinas personalizado por perfil para organizar alimentación, hábitos y pequeños cuidados durante la menopausia.\nAcceso inmediato por US$ 19,90.",
   problemStatement: {
     title: "No estás fallando.",
     subtitle: "Tu cuerpo está cambiando.",
@@ -40,7 +40,7 @@ const INITIAL_CONTENT: LandingPageContent = {
     description: "Menopausia Con Claridad no fue creado para que descargues un material y lo olvides. Es una experiencia digital en formato webapp, pensada para ayudarte a transformar información en una rutina posible.",
     items: [
       "Webapp fácil de usar desde el celular",
-      "Creador de rutinas personalizado para organizar tus hábitos diarios",
+      "Creador de rutinas personalizado por perfil para organizar tus hábitos diarios",
       "Guía educativa sobre alimentación y cuidados en la menopausia",
       "Ideas simples de comidas, hábitos y pequeños pasos para aplicar en la vida real",
       "Acceso inmediato para usar a tu ritmo"
@@ -179,8 +179,8 @@ const INITIAL_CONTENT: LandingPageContent = {
     closing: "Herramientas prácticas para que tengas resultados más rápidos, incluidas gratis hoy."
   },
   simplePricing: {
-    title: "Crea tu rutina personalizada hoy",
-    subtitle: "Webapp + guía digital + materiales de apoyo para organizar tus hábitos con más calma y dirección.",
+    title: "Crea tu rutina personalizada por perfil hoy",
+    subtitle: "Webapp + guía digital + materiales de apoyo para organizar tus hábitos con más calma y dirección, a partir de un perfil simple.",
     price: "US$ 19,90",
     cta: "Sí, quiero crear mi rutina",
     details: "Pago único · Acceso digital inmediato · Garantía de 7 días",
@@ -259,7 +259,7 @@ const INITIAL_CONTENT: LandingPageContent = {
       avatar: ""
     }
   ],
-  ctaText: "Crear mi rutina personalizada"
+  ctaText: "Crear mi rutina por perfil"
 };
 
 const App: React.FC = () => {
